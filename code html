@@ -1,0 +1,64 @@
+<!doctype html>
+   <head>
+      <style>
+         
+         body {
+             font-family: arial;
+             text-align:center;
+             background-color:black;
+             color: white;
+         }
+         button {
+             padding:10px;
+             background-color:pink;
+             border: 10px;
+             cursor:pointer;
+             border-radius: 10px;
+         }
+         #output {
+             background-color:pink;
+             padding:10px;
+             width: 100%;
+             margin-top:20px;
+             line-height:20px;
+         }
+         .hide {
+             display:none;
+         }
+         .show {
+             display:block;
+         }
+      </style>
+      <title>Speech to Text</title>
+   </head>
+   <body>
+        <p>Speak something...</p>
+        <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p>
+        <div id="output" class="hide"></div>
+         </h1>
+
+ <div class="form-group">
+
+
+
+ </div>
+
+ <div class="form-group">
+
+<p id="instructions">    </p>
+<button class = "btn btn-danger btn-block" onclick="onConnectUsb()" id="connect-usb">
+    CONNECT
+</button>
+
+
+ 
+ <p id="instructions">PRESS THE CONNECT BUTTON</p>
+
+ </div>
+
+ </div>
+
+ <script src="r.js"></script>
+<script src="arduino.js"></script>
+   </body>
+</html>
